@@ -1,2 +1,2 @@
 # JavaScript Problems
-Problems that i use to practice 👨‍💻
+Problems that I use to practice 👨‍💻
