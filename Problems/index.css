@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background: linear-gradient(270deg, black, rgb(15, 15, 15));
     color: white;
-    font-family: monospace;
+    font-family: 'JetBrains Mono';
 }

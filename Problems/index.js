@@ -41,8 +41,7 @@ function entrar (hora) {
 }*/
 
 //Inicio de sesion
-/*alert('hola');
-let usuario = prompt('Quien eres?');
+/*let usuario = prompt('Hola, quien eres?');
 
 if (usuario == 'administrador') {
     let contraseña = prompt('Contraseña?');
@@ -61,3 +60,36 @@ if (usuario == 'administrador') {
     alert('Usuario desconocido')
 }*/
 
+//Dias de la semana narrados
+/*let day = prompt('Que dia es hoy?')
+
+switch(day) {
+    case 'lunes':
+    case 'Lunes':
+        alert('Que aburrido')
+        break
+    case 'martes':
+    case 'Martes':
+        alert('Por lo menos no es lunes')
+        break
+    case 'miercoles':
+    case 'Miercoles':
+        alert('Falta poco para descansar, tu puedes')
+        break
+    case 'jueves':
+    case 'Jueves':
+        alert('Ya mañana es viernes, vamos que se puede')
+        break
+    case 'viernes':
+    case 'Viernes':
+        alert('Largo dia de trabajo, pero lo has logrado a descansar 🛏')
+        break
+    case 'sabado':
+    case 'Sabado':
+    case 'domingo':
+    case 'Domingo':
+        alert('😴')
+        break
+    default:
+        alert('Escribe bien')
+}*/
