@@ -89,53 +89,68 @@ switch(day) {
 
 
 //La cuenta del restaurante
-/*let precio, propina, resultado
+let precio, propina, resultado
 
 function preguntarCena () {
 
     precio = parseFloat(prompt('Cuanto ha costado la comida?'))
-
-    if (typeof precio == 'number' && precio <= 0) {
-        alert('No has comido nada...')
-    }else if (typeof precio == 'number' && precio <= 10) {
-        alert('Ha sido barata la comida')
-        preguntarPropina()
-    }else if (typeof precio == 'number' && precio >= 10 && precio <= 20) {
-        alert('Te has comprado una buena cena')
-        preguntarPropina()
-    }else if (typeof precio == 'number' && precio >= 20 && precio <= 30) {
-        alert('Pero eres millonario o que!?')
-        preguntarPropina()
-    }else if (typeof precio == 'number' && precio >= 30) {
-        alert('No tenemos en nuestro menu alimentos mayores a $30')
-        preguntarCena()
-    }else {
+    if (!Number.isInteger(precio)) {
         alert('Ingrese un valor valido')
         preguntarCena()
     }
+
+    switch(true) {
+        case precio <= 0:
+            alert('No has comido nada...')
+            break
+        case precio <= 10:
+            alert('Ha sido barata la comida')
+            preguntarPropina()
+            break
+        case precio >= 10 && precio <= 20:
+            alert('Te has comprado una buena cena')
+            preguntarPropina()
+            break
+        case precio >= 20 && precio <= 30:
+            alert('Pero eres millonario o que!?')
+            preguntarPropina()
+            break
+        case precio >= 30:
+            alert('No tenemos en nuestro menu alimentos mayores a $30')
+            preguntarCena()
+            break
+        }
 }
 
 function preguntarPropina () {
 
     propina = parseFloat(prompt('Cuanto deseas dejar de propina?'))
 
-    if (typeof propina == 'number' && propina <= 0) {
-        alert('Jodete 🖕')
-    }else if (typeof propina == 'number' && propina <= 10) {
-        alert('Gracias por ayudar al mesero')
-    }else if (typeof propina == 'number' && propina >= 10 && propina <= 20) {
-        alert('Pero que gentil eres 😊')
-    }else if (typeof propina == 'number' && propina >= 20 && propina <= 30) {
-        alert('Eres la persona mas humilde que he visto, te quiero ❤')
-    }else if (typeof propina == 'number' && propina >= 30) {
-        alert('No nos tienen permitido aceptar propinas tan altas')
-        preguntarPropina()
-    }else {
+    if (!Number.isInteger(propina)) {
         alert('Ingrese un valor valido')
         preguntarPropina()
+    }
+
+    switch(true) {
+        case propina <= 0:
+            alert('Jodete 🤬')
+            break
+        case propina <= 10:
+            alert('Que gentil eres 😊')
+            break
+        case propina >= 10 && propina <= 20:
+            alert('Muchisimas gracias 🤗')
+            break
+        case propina >= 20:
+            alert('Eres la persona mas gentil que he visto 💖')
+            break
     }
 }
 
 preguntarCena()
 let suma = precio + propina
-resultado = alert('El coste total de su comida es de $' + suma)*/
+if (precio > 0) {
+resultado = alert('El coste total de su comida es de $' + suma)
+}else if (precio <= 0) {
+    alert('Largo de mi restaurante 🤬')
+}
