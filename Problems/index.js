@@ -89,7 +89,7 @@ switch(day) {
 
 
 //La cuenta del restaurante
-let precio, propina, resultado
+/*let precio, propina, resultado
 
 function preguntarCena () {
 
@@ -153,4 +153,4 @@ if (precio > 0) {
 resultado = alert('El coste total de su comida es de $' + suma)
 }else if (precio <= 0) {
     alert('Largo de mi restaurante 🤬')
-}
+}*/
