@@ -149,8 +149,46 @@ function preguntarPropina () {
 
 preguntarCena()
 let suma = precio + propina
+
 if (precio > 0) {
 resultado = alert('El coste total de su comida es de $' + suma)
 }else if (precio <= 0) {
     alert('Largo de mi restaurante 🤬')
 }*/
+
+//Calculadora
+/*function preguntarOperacion () {
+    let operacion = parseInt(prompt('Que operacion deseas ejecutar? 1 = suma  2 = resta  3 = multiplicacion  4 = division  5 = potenciacion'))
+    let numero = parseFloat(prompt('Elija el primer numero de su operacion'))
+    let numero1 = parseFloat(prompt('Elija el segundo numero de su operacion'))
+
+    if (!Number.isInteger(operacion) || operacion > 5 || !Number.isInteger(numero) || !Number.isInteger(numero1)) {
+        alert('Escriba una opcion valida')
+        preguntarOperacion()
+    }
+
+    switch(operacion) {
+        case 1:
+            let suma = numero + numero1
+            alert('El resultado de la operacion es ' + suma)
+            break
+        case 2:
+            let resta = numero - numero1
+            alert('El resultado de la operacion es ' + resta)
+            break
+        case 3:
+            let multiplicacion = numero * numero1
+            alert('El resultado de la operacion es ' + multiplicacion)
+            break
+        case 4:
+            let division = numero / numero1
+            alert('El resultado de la operacion es ' + division)
+            break
+        case 5:
+            let potenciacion = numero ** numero1
+            alert('El resultado de la operacion es ' + potenciacion)
+            break
+    }
+}
+
+preguntarOperacion()*/
