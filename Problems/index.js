@@ -156,6 +156,7 @@ resultado = alert('El coste total de su comida es de $' + suma)
     alert('Largo de mi restaurante 🤬')
 }*/
 
+
 //Calculadora
 /*function preguntarOperacion () {
     let operacion = parseInt(prompt('Que operacion deseas ejecutar? 1 = suma  2 = resta  3 = multiplicacion  4 = division  5 = potenciacion'))
@@ -190,5 +191,21 @@ resultado = alert('El coste total de su comida es de $' + suma)
             break
     }
 }
-
 preguntarOperacion()*/
+
+
+//Boton de like
+/*let button = document.getElementById('button')
+let p = document.getElementById('p')
+let number = null
+let i = false
+
+button.addEventListener('click', () => {
+    if (i == false) {
+    i = true
+    p.textContent = (number++)
+    }else {
+        i = false
+        p.textContent = (number--)
+    }
+})*/
