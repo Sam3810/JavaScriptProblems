@@ -202,10 +202,37 @@ let i = false
 
 button.addEventListener('click', () => {
     if (i == false) {
-    i = true
-    p.textContent = (number++)
+        i = true
+        p.textContent = (number++)
     }else {
         i = false
         p.textContent = (number--)
     }
 })*/
+
+//Inicio de sesion 2
+/*let correo = prompt('Bienvenido, para registrarse ingrese su correo electronico 📭')
+let contraseña = prompt('Ahora escriba una contraseña 🙈')
+let usuario = prompt('Estas casi listo, solo escribe un nombre de usuario 😎')
+
+function iniciarSesion (max, min) {
+    let usuarioV = prompt('Ingrese su nombre de usuario 😎')
+    let contraseñaV = prompt('Ingrese su contraseña 🙈')
+
+    if (!(contraseñaV == contraseña) || !(usuarioV == usuario)) {
+        alert('El nombre de usuario o contraseña son incorrectos 💥')
+        iniciarSesion(1000, 500)
+    }else {
+        let codigo = Math.floor(Math.random() * (max - min + 1)) + min
+        alert(codigo)
+        let verificacion = prompt('Por favor ingrese el codigo que le enviamos 📩')
+        if (verificacion == codigo) {
+            alert('Has iniciado sesion')
+        }else {
+            alert('El codigo es incorrecto, vuelva a iniciar sesion 💥')
+            iniciarSesion(1000, 500)
+        }
+    }
+}
+
+iniciarSesion(1000, 500)*/
